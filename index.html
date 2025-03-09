@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Flashcard App</title>
+  <!-- CSS link - this connects to your styles.css file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="header">
+        <h1>AI Flashcard Study App</h1>
+        <p class="counter">
+          Card <span id="current-card">1</span> of <span id="total-cards">20</span> · 
+          Total: 20 · 
+          Marked: <span id="marked-count">0</span> · 
+          Remaining: <span id="remaining-count">20</span>
+        </p>
+      </div>
+      
+      <div class="controls">
+        <button id="all-cards" class="active">All Cards</button>
+        <button id="marked-only">Marked Only</button>
+        <button id="unmarked-only">Unmarked Only</button>
+        <button id="shuffle">Shuffle</button>
+        <button id="reset" class="reset">Reset Progress</button>
+      </div>
+      
+      <div id="flashcard" class="flashcard">
+        <div class="content">
+          <div id="question-container" class="visible">
+            <div class="label">Question:</div>
+            <div id="question" class="text"></div>
+          </div>
+          <div id="answer-container" class="hidden">
+            <div class="label">Answer:</div>
+            <div id="answer" class="text"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="navigation">
+        <button id="prev" class="nav-button">Previous</button>
+        <button id="mark" class="mark-button">Mark Card</button>
+        <button id="next" class="nav-button">Next</button>
+      </div>
+      
+      <div class="tip">
+        Tip: Click on the card to reveal the answer. Mark cards you want to review later.
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript link - this connects to your script.js file -->
+  <script src="script.js"></script>
+</body>
+</html>
